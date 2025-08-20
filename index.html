@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estado del clima</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="clima.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <form onsubmit="event.preventDefault(); buscarClima();">
+            <input type="text" id="ciudad" class="input" placeholder="Nombre de la ciudad">
+            <button type="button" id="buscar" class="buscar" onclick="buscarClima()">Buscar</button>
+            <div id="suggestions"></div>
+        </form>
+    </header>
+
+    <main id="main">
+        <!-- Aquí se inyectará la card -->
+    </main> 
+        
+
+    <footer>
+        <div class="creditos">
+            <a class="derechos" href="https://api.whatsapp.com/send?phone=50683301877" target="_blank">
+                <p><b>&copy; Jose Castro</b><br>Todos los derechos reservados</p>
+            </a>
+        </div class="creditos">
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
